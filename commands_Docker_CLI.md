@@ -19,37 +19,37 @@
 * docker run username/repository:tag                   ==> Run image from a registry
 
 ## Stack
-docker stack ls                                            ==> List stacks or apps
-docker stack deploy -c <composefile> <appname>  ==> Run the specified Compose file
-docker service ls                 ==> List running services associated with an app
-docker service ps <service>                  ==> List tasks associated with an app
-docker inspect <task or container>                   ==> Inspect task or container
-docker container ls -q                                      ==> List container IDs
-docker stack rm <appname> 
+* docker stack ls                                            ==> List stacks or apps
+* docker stack deploy -c <composefile> <appname>  ==> Run the specified Compose file
+* docker service ls                 ==> List running services associated with an app
+* docker service ps <service>                  ==> List tasks associated with an app
+* docker inspect <task or container>                   ==> Inspect task or container
+* docker container ls -q                                      ==> List container IDs
+* docker stack rm <appname> 
 
 ## Docker Machine
-docker-machine create --driver virtualbox myvm1 ==> Create a VM (Mac, Win7, Linux)
-docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1 ==> Win10
-docker-machine env myvm1                ==> View basic information about your node
-docker-machine ssh myvm1 "docker node ls"         ==> List the nodes in your swarm
-docker-machine ssh myvm1 "docker node inspect <node ID>"        ==> Inspect a node
-docker-machine ssh myvm1 "docker swarm join-token -q worker"   ==> View join token
-docker-machine ssh myvm1   ==> Open an SSH session with the VM; type "exit" to end
-docker-machine ssh myvm2 "docker swarm leave"  ==> Make the worker leave the swarm
-docker-machine ssh myvm1 "docker swarm leave -f" ==> Make master leave, kill swarm
-docker-machine start myvm1            ==> Start a VM that is currently not running
-docker-machine stop $(docker-machine ls -q)               ==> Stop all running VMs
-docker-machine rm $(docker-machine ls -q) ==> Delete all VMs and their disk images
-docker-machine scp docker-compose.yml myvm1:~     ==> Copy file to node's home dir
-docker-machine ssh myvm1 "docker stack deploy -c <file> <app>"   ==> Deploy an app
+* docker-machine create --driver virtualbox myvm1 ==> Create a VM (Mac, Win7, Linux)
+* docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1 ==> Win10
+* docker-machine env myvm1                ==> View basic information about your node
+* docker-machine ssh myvm1 "docker node ls"         ==> List the nodes in your swarm
+* docker-machine ssh myvm1 "docker node inspect <node ID>"        ==> Inspect a node
+* docker-machine ssh myvm1 "docker swarm join-token -q worker"   ==> View join token
+* docker-machine ssh myvm1   ==> Open an SSH session with the VM; type "exit" to end
+* docker-machine ssh myvm2 "docker swarm leave"  ==> Make the worker leave the swarm
+* docker-machine ssh myvm1 "docker swarm leave -f" ==> Make master leave, kill swarm
+* docker-machine start myvm1            ==> Start a VM that is currently not running
+* docker-machine stop $(docker-machine ls -q)               ==> Stop all running VMs
+* docker-machine rm $(docker-machine ls -q) ==> Delete all VMs and their disk images
+* docker-machine scp docker-compose.yml myvm1:~     ==> Copy file to node's home dir
+* docker-machine ssh myvm1 "docker stack deploy -c <file> <app>"   ==> Deploy an app
 
 ## other commands
-docker pull alpine      ==>pull the image alpine
-docker images    ==>list all images
-docker run -it alpine /bin/sh   ==>access the container
-docker ps   ==>check the running containers 
-docker ps -a   ==>get history of running container
-docker stop a7a0e504ca3e  ==>use the container Id to stop the container
-docker rm   a7a0e504ca3e  ==>use the container Id to remove the container
-docker port static-site   ==>see the ports
-docker-machine ip default   ==>get the IP of the docker machine
+* docker pull alpine      ==>pull the image alpine
+* docker images    ==>list all images
+* docker run -it alpine /bin/sh   ==>access the container
+* docker ps   ==>check the running containers 
+* docker ps -a   ==>get history of running container
+* docker stop a7a0e504ca3e  ==>use the container Id to stop the container
+* docker rm   a7a0e504ca3e  ==>use the container Id to remove the container
+* docker port static-site   ==>see the ports
+* docker-machine ip default   ==>get the IP of the docker machine
