@@ -3,8 +3,8 @@
 # Prerequiste
 ============
 
- 1-Get Ubuntu image.
- 2-Install Docker on the ubuntu image. 
+ 1-Get Ubuntu image. <br />
+ 2-Install Docker on the ubuntu image. <br />
  3-install nodejs on ubuntu.
  
 -------------------------------------------
