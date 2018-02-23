@@ -16,16 +16,11 @@
 	-Port 9200 is for Elasticsearch
 	-Port 5044 is for Logstash
 	
-	34.230.39.250:5601
-	90c581d74e79
-	sudo docker exec -it elk /bin/bash
+5-To login to the container : 
+	$sudo docker exec -it elk /bin/bash
 	
 	 /opt/logstash/bin/logstash --path.data /tmp/logstash/data -e 'input { stdin { } } output { elasticsearch { hosts => ["localhost"] } }'
 	 
-	 http://107.22.17.59:9200/_search?pretty
-	 
-	 10.176.246.114:3000
-	 
-	 34.230.39.250:5601
+6-To query the Elastic-Search use this URL : http://IP:9200/_search?pretty
 	 
 	 
