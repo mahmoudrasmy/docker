@@ -12,8 +12,8 @@
 # Steps
 
 1-Install nodejs on Ubuntu
-	1.1-$sudo apt-get update
-	1.2-$sudo apt-get install nodejs
+	1.1-$sudo apt-get update <br />
+	1.2-$sudo apt-get install nodejs <br />
 	1.3-$sudo apt-get install npm
 
 2-First create the nodejs application
