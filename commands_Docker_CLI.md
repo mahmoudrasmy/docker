@@ -55,3 +55,4 @@
 * docker-machine ip default   ==>get the IP of the docker machine
 * docker exec -u 0 -it mycontainer bash  ==> to login as a root user
 * sudo docker cp filename elk:/filename  ==> to copy file from your machine to the docker container
+* sudo docker cp <containerId>:/file/path/within/container /host/path/target ==> to copy file from docker to the machine 
