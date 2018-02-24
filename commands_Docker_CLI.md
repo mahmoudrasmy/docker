@@ -53,4 +53,5 @@
 * docker rm   a7a0e504ca3e  ==>use the container Id to remove the container
 * docker port static-site   ==>see the ports
 * docker-machine ip default   ==>get the IP of the docker machine
-* docker exec -u 0 -it mycontainer bash
+* docker exec -u 0 -it mycontainer bash  ==> to login as a root user
+* sudo docker cp filename elk:/filename  ==> to copy file from your machine to the docker container
