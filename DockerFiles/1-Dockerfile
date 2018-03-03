@@ -1,0 +1,14 @@
+#create the base image to Ubuntu
+FROM ubuntu
+
+# Update the Repo list
+RUN apt-get update
+
+# Install nodejs on ubuntu
+RUN apt-get install curl -y
+
+# ADD The nodejs URL
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
+
+# Install nodejs
+RUN apt-get install nodejs -y
