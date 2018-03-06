@@ -49,6 +49,7 @@
 * docker network create --driver bridge alpine-net ==> to create a network
 * docker run -dit --name alpine1 --network alpine-net alpine ash ==> Create a docker container and attach a specific network to it
 * docker network connect bridge alpine4  ==> connect a speicic network to a container
+* docker run --rm -itd --network host --name my_nginx nginx  ==> Start a container with the host network
 
 
 ## Commands inside the container
