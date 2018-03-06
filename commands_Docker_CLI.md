@@ -43,6 +43,13 @@
 * docker-machine scp docker-compose.yml myvm1:~     ==> Copy file to node's home dir
 * docker-machine ssh myvm1 "docker stack deploy -c <file> <app>"   ==> Deploy an app
 
+## Docker Networks
+* docker network ls ==> To list all Docker networks
+* docker network inspect bridge  ==> To see all the details about the network
+
+## Commands inside the container
+* ip addr show
+
 ## other commands
 * docker pull alpine      ==>pull the image alpine
 * docker images    ==>list all images
@@ -56,3 +63,4 @@
 * docker exec -u 0 -it mycontainer bash  ==> to login as a root user
 * sudo docker cp filename elk:/filename  ==> to copy file from your machine to the docker container
 * sudo docker cp <containerId>:/file/path/within/container /host/path/target ==> to copy file from docker to the machine 
+* sudo docker attach alpine1 ==> to connect to the container
