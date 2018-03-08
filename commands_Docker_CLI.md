@@ -2,6 +2,7 @@
 
 ## Basic commands
 * docker search image_name  ===> to search for the existance of an image
+* docker run -d image_name:latest  ==> to run the image in deatched mode with the latest version
 * docker build -t friendlyname .   ==> Create image using this directory's Dockerfile
 * docker run -p 4000:80 friendlyname  ==> Run "friendlyname" mapping port 4000 to 80
 * docker run -d -p 4000:80 friendlyname         ==> Same thing, but in detached mode
