@@ -1,6 +1,7 @@
 # Some Docker important commands 
 
 ## Basic commands
+* docker search image_name  ===> to search for the existance of an image
 * docker build -t friendlyname .   ==> Create image using this directory's Dockerfile
 * docker run -p 4000:80 friendlyname  ==> Run "friendlyname" mapping port 4000 to 80
 * docker run -d -p 4000:80 friendlyname         ==> Same thing, but in detached mode
