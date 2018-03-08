@@ -18,6 +18,7 @@
 
 2-First create the nodejs application
 	1.1-create the package.json
+	```
 		{
 			"name": "docker_web_app",
 			"version": "1.0.0",
@@ -31,8 +32,9 @@
 			"express": "^4.16.1"
 			}
 		}
-	
+	```
  	1.2-Create the script server
+	```
 	  'use strict';
       const express = require('express');
       // Constants
@@ -47,13 +49,14 @@
  
       app.listen(PORT, HOST);
       console.log(`Running on http://${HOST}:${PORT}`);
-	  
+	  ```
 	  1.3-Run the script file using the following command
 		$nodejs server.js
 		
 3-Create the Docker File
 	1-$touch Dockerfile
 	2-Copy the following script in the docker file 
+		```
 		FROM node:carbon
 		# Create app directory
 		WORKDIR /usr/src/app
@@ -72,6 +75,7 @@
 		
 		EXPOSE 8080
 		CMD [ "npm", "start" ]
+		```
 	3-$touch .dockerignore
 	4-Copy the following script inside the .dockerignore
 		node_modules
