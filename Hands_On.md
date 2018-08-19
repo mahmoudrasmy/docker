@@ -45,3 +45,6 @@
     # Run app.py when the container launches
     CMD ["python", "app.py"]
     ```
+  - $sudo docker build -t friendlyhello .  ==> to build an image
+  - $sudo docker run -p 4000:80 friendlyhello   ==> to run a container instance 
+  - $sudo docker run -d -p 4000:80 friendlyhello  ==> to run a container instance in deatched mode
